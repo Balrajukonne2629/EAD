@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>College Website</title>
+        <style>
+            nav{
+                margin-top:40px;
+                font-family: sans-serif;
+                font-size: small;
+                position:sticky;
+                top:10px;
+            }
+            .container{
+                height: 60px;
+                width:89%;
+                margin:auto;
+                background-color:rgba(244, 243, 243, 0.781);
+                display:flex;
+                border:ridge 0.5px;
+                border-radius: 10px;
+            }
+            .middle{
+                display:flex;
+                gap:18px;
+                align-items: center;
+                 padding-left:10%;
+                padding-right:13%; 
+            }
+           .end
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: right;
+                align-items: center;
+                gap:15px;
+            }
+            .down{
+
+                text-align: center;
+                height: 30px;
+                width:100px;
+                place-content: center;
+                border-radius: 1px;
+                background-color: rgba(255, 201, 5, 0.825);
+            }
+            img{
+                height:60px;
+                margin-right:50px;
+                align-self: flex-start;
+            }
+            /* main content css */
+            p{
+                height:600px;
+                margin:auto;
+                position:block;
+                width:79%;
+                border:solid;
+                font-size:18px;
+                line-height:2;
+                border-radius: 20px;
+                word-spacing: 1px;
+                padding: 10px;
+                
+            }
+            p::before{
+                content:"C";
+                font-size:40px;
+                color:black;
+            }
+            h1{
+                margin-left:5%;
+
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <div class="item-image">
+                    <img src="https://www.cbit.ac.in/wp-content/uploads/2023/04/CBIT-LOGO-2023.png" altr="logo">
+                </div>
+                <div class="middle">
+                    <div class="item">Academics</div>
+                    <div class="item">Placements</div>
+                    <div class="item">Office</div>
+                    <div class="item">Research</div>
+                </div>
+                <div class="end">
+                    <div class="item down">Contact</div>
+                    <div class="item">🌐Alumni</div>
+                    <div class="item">🔎︎ Search</div>
+                 </div>
+            </div> 
+        </nav>
+        <main>
+            <h1>About:</h1>
+            <p>
+                haitanya Bharathi Institute of Technology (CBIT),
+                 established in 1979 in Hyderabad, is one of the premier engineering colleges in Telangana.
+                  Affiliated with Osmania University and approved by AICTE, it holds NAAC accreditation with an A++ grade.
+                   The college offers undergraduate and postgraduate programs in engineering, management, and allied fields. Known for its strong academic foundation, CBIT emphasizes research, innovation, and industry collaboration. The campus provides modern infrastructure, a vibrant student community, and active placement opportunities. With consistent rankings in NIRF and a reputation for excellence,
+                 CBIT continues to nurture skilled professionals and leaders for diverse industries.
+            </p>
+        </main>
+    </body>
+</html>

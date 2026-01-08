@@ -1,0 +1,87 @@
+ .container {
+     width: fit-content;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     border: solid 5px;
+     margin: auto;
+     font-family: sans-serif;
+     background-color: bisque;
+     border-radius: 10px;
+ }
+
+ /******************** display bar ***********************/
+ #display {
+     border-radius: 20px;
+     margin-top: 10px;
+     margin-left: 20px;
+     width: 80%;
+     height: 40px;
+     font-size: large;
+ }
+
+ /**************** start keys*******************/
+ .start {
+     display: flex;
+     flex-wrap: wrap;
+     place-content: center;
+     gap: 10px;
+     border: none;
+ }
+
+ .keys {
+     border: solid;
+     border-radius: 10px;
+     width: fit-content;
+     height: 30px;
+     text-align: center;
+     font-size: 30px;
+     padding: 0px 10px;
+     background-color: rgb(198, 213, 198);
+
+ }
+
+ .one {
+     font-size: 20px;
+     font-weight: 700;
+     border-radius: 80px;
+ }
+
+ .two {
+     font-size: 20px;
+     font-weight: 700;
+ }
+
+ /***************number keys************************/
+ .numbers {
+     display: grid;
+     grid-template-columns: repeat(4, auto);
+     grid-template-rows: repeat(5, auto);
+     gap: 10px;
+     border: none;
+
+ }
+
+ .items {
+     border: solid;
+     border-radius: 10px;
+     width: 60px;
+     height: 30px;
+     font-size: 25px;
+     text-align: center;
+     background-color: aqua;
+ }
+
+ .enter {
+     grid-column: 4/5;
+     grid-row: 4/7;
+     height: 80px;
+     align-content: center;
+
+ }
+
+ /*********** hover**********/
+ .keys:hover,
+ .items:hover {
+     background-color: rgb(132, 132, 197);
+ }

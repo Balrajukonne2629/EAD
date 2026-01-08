@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <style>
+        th {
+            background-color: grey;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        body>div {
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        body>div {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            margin: 5px;
+            background-color: gainsboro;
+            box-shadow: rgb(114, 111, 111) 5px 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Time Table</h1>
+    <div>
+        <table>
+            <tr>
+                <th>Period</th>
+                <th>I</th>
+                <th>II</th>
+                <th>III</th>
+                <th rowspan="2">12:15 to <br> 1:00 pm</th>
+                <th>IV</th>
+                <th>V</th>
+                <th>VI</th>
+            </tr>
+            <tr>
+                <th>Day/Time</th>
+                <th>9:10 To 10:10 AM</th>
+                <th>9:10 To 10:10 AM</th>
+                <th>9:10 To 10:10 AM</th>
+                <th>9:10 To 10:10 AM</th>
+                <th>9:10 To 10:10 AM</th>
+                <th>9:10 To 10:10 AM</th>
+            </tr>
+            <tr>
+                <th>MONDAY</th>
+                <td>EEA</td>
+                <td>PE-I</td>
+                <td>PE-I</td>
+                <td>Lunch Break</td>
+                <td>PE-I</td>
+                <td>PE-I</td>
+                <td>PE-I</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

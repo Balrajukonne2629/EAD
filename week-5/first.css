@@ -1,0 +1,26 @@
+.container{
+            border:solid 2px;
+            width:300px;
+            height:200px;
+            margin:auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: bisque;
+        }
+        .name,.pass{
+           color:blue;
+           font-size: 20px;
+        }
+        button:hover{
+            background-color: rgba(12, 202, 202, 0.821);
+        }
+        #err
+        {
+            color: red;  
+        }
+        #Submit {
+            margin-top: 20px;
+
+        }

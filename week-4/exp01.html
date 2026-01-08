@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+
+        div {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>About Me</h1>
+    <div>
+        <h3>Registration Form</h3>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="rollNo">Roll Number</label></td>
+                    <td><input type="number" name="rollNo" id="rollNo"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="text" id="email" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="branch">Branch</label></td>
+                    <td><select name="branches" id="branch">
+                            <option value="IT">Information Technology</option>
+                            <option value="CSE">Computer Science and Engineering</option>
+                        </select></td>
+                </tr>
+            </table>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EIGHT Calculator</title>
+    <style>
+        .container{
+            width: fit-content;
+           display: flex;
+           flex-direction: column;
+            gap:10px;
+            border:solid;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+            font-family: sans-serif;
+            background-color: bisque;
+        }
+        /******************** display bar***********************/
+        .display{
+            border-radius: 20px;
+            margin: auto;
+            width:80%;
+            height: 50px;
+            font-size: large;
+            letter-spacing: 10px;
+            text-align: center;
+            align-content: center;
+            background-color: yellow; 
+        }
+        /**************** start keys*******************/
+        .start{
+            display: flex;
+            flex-wrap: wrap;
+            place-content: center;
+            gap:10px;
+            border:none;
+        }
+        .keys{
+            border:solid;
+            border-radius: 10px;
+            width:fit-content;
+            height:30px;
+            text-align: center;
+            font-size: 30px;
+            padding:0px 10px;
+            background-color: rgb(198, 213, 198);
+        }
+        .one{
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 80px;
+        }
+        .two{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        /***************number keys************************/
+        .numbers{
+            display:grid;
+            grid-template-columns: repeat(4,auto);
+            grid-template-rows: repeat(5,auto);
+            gap:10px;
+            border:none;
+            
+        }
+        .items{
+            border:solid;
+            border-radius: 10px;
+            width:60px;
+            height:30px;
+            font-size:25px;
+            text-align: center;
+            background-color: aqua;
+        }
+         .enter{
+            grid-column: 4/5;
+            grid-row: 4/7;
+            height:80px;
+            align-content: center;
+            
+        }
+        /*********** hover**********/
+        .keys:hover,.items:hover{
+            background-color: rgb(109, 109, 159);
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+    </header>
+    <main>
+        <div class="container">
+            <div class="display"> DISPLAY</div>
+            <div class="start">
+                <div class="keys one">ON/CE</div>
+                <div class="keys two ">MRC</div>
+                <div class="keys">M-</div>
+                <div class="keys">M+</div>
+            </div>
+            <div class="numbers">
+                <div class="items ">OFF</div>
+                <div class="items">√</div>
+                <div class="items">%</div>
+                <div class="items">/</div>
+                <div class="items">7</div>
+                <div class="items">8</div>
+                <div class="items">9</div>
+                 <div class="items">*</div>
+                <div class="items">4</div>
+                <div class="items">5</div>
+                <div class="items">6</div>
+                <div class="items">-</div>
+                <div class="items">1</div>
+                <div class="items">2</div>
+                <div class="items">3</div>
+                <div class="items enter">+</div>
+                <div class="items">0</div>
+                <div class="items">.</div>
+                <div class="items">=</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

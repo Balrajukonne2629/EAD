@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exp 08</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+
+<body>
+
+    <form action="submit">
+        <div class="container">
+            <div class="name">
+                <label>Name:</label>
+                <input type="text" id="user" required>
+            </div>
+            <div class="pass">
+                <label class="password">Password:</label>
+                <input type="text" class="password" id="pass" required>
+            </div>
+            <p id="err"></p>
+            <button id="Submit" type="button" onclick="checkLogin()">Submit</button>
+        </div>
+    </form>
+    <script>
+        let count = 0;
+        function checkLogin() {
+            var u = document.getElementById("user").value;
+            var p = document.getElementById("pass").value;
+            var msg = document.getElementById("err");
+            var btn = document.getElementById("Submit");
+            if (u =="" || p =="") {
+                msg.innerText = "enter valid details"
+                return;
+            }
+             else if (p.length < 6) {
+                msg.innerText = "Password too short!";
+                return;
+            }
+            if (u == "admin" && p == "123456") {
+                msg.style.color = "green";
+                msg.innerText = "Success!";
+            } else {
+                count++;
+                msg.innerText = "Wrong! Attempt: " + count;
+                if (count >= 3) {
+                    msg.innerText = "Button Disabled!";
+                    btn.disabled = true;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

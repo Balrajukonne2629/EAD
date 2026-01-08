@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Analysis Tool</title>
+    <style>
+        body {
+            font-family:  sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #5c67f2;
+            color: white;
+            border-radius: 5px; 
+            border:none;
+        }
+        #results {
+            margin-top: 20px;
+            text-align: left;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            border-left: 5px solid #5c67f2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>String Analyzer</h2>
+        <input type="text" id="userInput" placeholder="Type a sentence...">
+        <br>
+        <button onclick="analyzeString()">Analyze Text</button>
+
+        <div id="results">
+            <i>Results will be displayed here...</i>
+        </div>
+    </div>
+
+    <script src="fourth.js"></script>
+</body>
+</html>

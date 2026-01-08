@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="second.css">
+    <title> second- Calculator</title>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="display"><input type="text" id="display" placeholder="display"></div>
+            <div class="start">
+                <div class="keys one " onclick="clearDisplay()">ON/CE</div>
+                <div class="keys two ">MRC</div>
+                <div class="keys">M-</div>
+                <div class="keys">M+</div>
+            </div>
+            <div class="numbers">
+                <div class="items" onclick="turnoff()">OFF</div>
+                <div class="items" onclick="sqrtValue()">√</div>
+                <div class="items" onclick="call('%')">%</div>
+                <div class="items" onclick="call('/')">/</div>
+                <div class="items" onclick="call(7)">7</div>
+                <div class="items" onclick="call(8)">8</div>
+                <div class="items" onclick="call(9)">9</div>
+                <div class="items" onclick="call('*')">*</div>
+                <div class="items" onclick="call('4')">4</div>
+                <div class="items" onclick="call(5)">5</div>
+                <div class="items" onclick="call(6)">6</div>
+                <div class="items" onclick="call('-')">-</div>
+                <div class="items" onclick="call(1)">1</div>
+                <div class="items" onclick="call(2)">2</div>
+                <div class="items" onclick="call(3)">3</div>
+                <div class="items enter" onclick="call('+')">+</div>
+                <div class="items" onclick="call(0)">0</div>
+                <div class="items" onclick="call('.')">.</div>
+                <div class="items" onclick="result()">=</div>
+            </div>
+        </div>
+    </main>
+    <script>
+        var display = document.getElementById("display");
+        console.log("this is the first javascript file")
+        function call(val) {
+            display.value += val;
+            console.log(display.value);
+        }
+        function result() {
+            try {
+                display.value = eval(display.value);
+                console.log(eval(display.value));
+
+            }
+            finally {
+                console.log("added to the value")
+            }
+
+        }
+        function clearDisplay() {
+
+            display.value = "";
+            console.log(" value is cleared");
+            
+
+        }
+        function sqrtValue() {
+            const n = parseFloat(display.value);
+
+            if (isNaN(n)) return;
+            if (n < 0) {
+                display.value = "Invalid";
+                return;
+            }
+
+            display.value = Math.sqrt(n);
+        }
+        function turnoff(){
+           try
+           {
+            display.value="turned off";
+
+           }
+           finally{
+            console.log("turned off")
+           }
+            
+        }
+
+    </script>
+
+
+</body>
+
+</html>
