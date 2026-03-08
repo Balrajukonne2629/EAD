@@ -1,0 +1,52 @@
+body{
+    background-color: beige;
+}
+h1{text-align: center;}
+.submit{
+   border:solid;
+   margin:auto;
+   width: fit-content;
+   height: 15em;
+    background-color: aquamarine;
+    padding:40px;
+    border-radius: 10px;
+    line-height:30px;
+    
+    
+}
+label{
+    display:inline-flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#button{
+    background-color: rgb(238, 171, 14);
+    text-align: center;
+    margin-top:35px;
+    margin-left:90%;
+    padding:5px;
+    border-radius:10px;
+}
+#button:hover{
+    background-color: rgb(227, 227, 24);
+}
+input{
+    display: inline-block;
+    height:auto;
+    background-color: antiquewhite;
+    border-style:outset;
+    border-radius: 80px;
+    transform: translateX(5px);
+    
+}
+#DEPT{
+    border:solid blue 2px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+option{
+    padding: 8px;
+    background-color: #09e1f9;
+    color: #333;
+    margin: 5px 0;
+}
+label.gender{font-family: Arial, Helvetica, sans-serif;}

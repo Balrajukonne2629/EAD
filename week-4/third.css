@@ -1,0 +1,26 @@
+body{
+    font-family:Arial,sans-serif;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+label{
+    font-style:italic;
+    display:block;
+    margin-top:10px;
+}
+input,textarea,button{
+    margin-top:5px;
+    margin-bottom:10px;
+    padding:6px;
+    
+}
+
+textarea{
+    height:150px;
+}
+input:focus,textarea:focus{
+    outline:none;
+    border-color:#1e90ff;
+    background:#eef6ff;
+}
